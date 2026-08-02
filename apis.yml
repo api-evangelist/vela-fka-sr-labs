@@ -1,8 +1,16 @@
 aid: vela-fka-sr-labs
 name: Vela (FKA SR Labs)
-description: Vela (FKA SR Labs) is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Vela Trading Technologies (formerly SR Labs) was a New York-based provider
+  of low-latency market data feed handlers, execution gateways, and multi-asset trading
+  platforms (SuperFeed, Metro, DMA Platform) for capital markets, surfaced here as
+  an Insight Partners portfolio company. Vela merged into Exegy in May 2021 and no
+  longer operates independently - tradevela.com is offline (HTTPS refused at probe
+  time) while its DNS now points at Exegy mail infrastructure. Vela published no
+  self-serve public HTTP API; SuperFeed was delivered via the open-source OpenMAMA
+  API (C++/C#/Java) with an OpenMAMA Developer Program, and its 2017 OptionsCity
+  acquisition exposed the now-decommissioned City Trader REST API, for which a
+  first-party Python client survives on the legacy GitHub org. See the exegy profile
+  for the successor company's current surface.
 url: https://raw.githubusercontent.com/api-evangelist/vela-fka-sr-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +18,32 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-successor: exegy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vela-fka-sr-labs.png
 tags:
 - Company
+- Financial
+- Market Data
+- Trading
+- Low Latency
+- Options
+- OpenMAMA
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +53,16 @@ maintainers:
 common:
 - type: Website
   url: https://tradevela.com/
+- type: GitHubOrganization
+  url: https://github.com/tradevela
+- type: Packages
+  url: packages/vela-fka-sr-labs-packages.yml
+- type: LLMsTxt
+  url: llms/vela-fka-sr-labs-llms.txt
+- type: DomainSecurity
+  url: security/vela-fka-sr-labs-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

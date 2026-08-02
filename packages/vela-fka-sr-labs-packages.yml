@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/tradevela
+notes: >-
+  Vela (FKA SR Labs) merged into Exegy in May 2021 and no longer operates
+  independently; tradevela.com and the OptionsCity API hosts
+  (devapi.optionscity.com) are offline. The single first-party client library
+  below remains published on the legacy GitHub org (github.com/tradevela) but
+  targets the decommissioned City Trader REST API from OptionsCity, which Vela
+  acquired in 2017. It was never published to PyPI (checked 2026-07-21:
+  pypi.org/pypi/citytrader and /city-trader both 404). The org's other two
+  repos (techan.js, Alert7.js) are forks, not first-party. Vela's SuperFeed
+  market data was delivered via the open-source OpenMAMA API (C++/C#/Java), a
+  FINOS/Linux Foundation project rather than a first-party package.
+packages:
+  - language: python
+    registry: github
+    name: CityTraderPythonLib
+    url: https://github.com/tradevela/city-trader-python-lib
+    install: python setup.py install
+    official: true
+    status: legacy
+    description: >-
+      Python client for OptionsCity's City Trader REST API (orders, product
+      groups, instruments, market data, order actions) using OAuth2
+      client_id/client_secret + username/password. Last pushed 2017-08-18;
+      the API host devapi.optionscity.com is no longer reachable.
